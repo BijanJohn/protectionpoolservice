@@ -947,5 +947,51 @@
         });
     </script>
 
+    <!-- Form Success/Error Notification -->
+    <div id="formNotification" class="fixed inset-0 bg-black/50 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center shadow-2xl">
+            <div id="notificationIcon" class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"></div>
+            <h3 id="notificationTitle" class="text-2xl font-bold text-gray-800 mb-2"></h3>
+            <p id="notificationMessage" class="text-gray-600 mb-6"></p>
+            <button onclick="closeNotification()" class="bg-pool-blue hover:bg-pool-dark text-white font-semibold px-6 py-3 rounded-lg transition">
+                Got it
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Check for form submission result
+        const urlParams = new URLSearchParams(window.location.search);
+        const formResult = urlParams.get('form');
+
+        if (formResult === 'success' || formResult === 'error') {
+            const notification = document.getElementById('formNotification');
+            const icon = document.getElementById('notificationIcon');
+            const title = document.getElementById('notificationTitle');
+            const message = document.getElementById('notificationMessage');
+
+            if (formResult === 'success') {
+                icon.innerHTML = '<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>';
+                icon.className = 'w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-green-500';
+                title.textContent = 'Message Sent!';
+                message.textContent = 'Thank you for contacting Protection Pool Service. We\'ll get back to you within 24 hours.';
+            } else {
+                icon.innerHTML = '<svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>';
+                icon.className = 'w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-red-500';
+                title.textContent = 'Something Went Wrong';
+                message.textContent = 'Please try again or call us directly at (737) 384-1702.';
+            }
+
+            notification.classList.remove('hidden');
+
+            // Clean up URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        function closeNotification() {
+            document.getElementById('formNotification').classList.add('hidden');
+        }
+    </script>
+
 </body>
 </html>
