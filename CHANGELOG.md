@@ -11,6 +11,7 @@
 - Favicon and Apple touch icon meta tags
 - JSON-LD structured data: LocalBusiness schema with address, phone, email, founder, geo coordinates, area served, and aggregate rating
 - JSON-LD structured data: Service catalog with all 5 service offerings
+- Google Analytics 4 tracking (G-0CLHN10BPD)
 
 ### Fixed
 - Updated copyright year from 2025 to 2026
