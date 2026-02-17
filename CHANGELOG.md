@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0] - 2026-02-17
+
+### Added
+- robots.txt for search engine crawl directives
+- sitemap.xml for search engine content discovery
+- Canonical URL tag to prevent duplicate content issues
+- Open Graph meta tags (og:title, og:description, og:image, og:url, og:type, og:site_name) for social media sharing
+- Twitter Card meta tags for rich link previews on Twitter/X
+- Favicon and Apple touch icon meta tags
+- JSON-LD structured data: LocalBusiness schema with address, phone, email, founder, geo coordinates, area served, and aggregate rating
+- JSON-LD structured data: Service catalog with all 5 service offerings
+
+### Fixed
+- Updated copyright year from 2025 to 2026
+
 ## [1.1.0] - 2026-02-05
 
 ### Added

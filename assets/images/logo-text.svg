@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon circle -->
+  <circle cx="90" cy="100" r="80" fill="url(#bgGrad2)"/>
+
+  <!-- Shield in circle -->
+  <path d="M90 35 L145 55 L145 100 C145 135 90 160 90 160 C90 160 35 135 35 100 L35 55 Z"
+        fill="none" stroke="white" stroke-width="3" opacity="0.25"/>
+
+  <!-- Water waves -->
+  <path d="M55 95 Q67 82 80 95 Q93 108 105 95 Q117 82 130 95"
+        fill="none" stroke="url(#waveGrad2)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M55 112 Q67 99 80 112 Q93 125 105 112 Q117 99 130 112"
+        fill="none" stroke="url(#waveGrad2)" stroke-width="4.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Water droplet -->
+  <path d="M90 42 C90 42 76 62 76 72 C76 80 82 87 90 87 C98 87 104 80 104 72 C104 62 90 42 90 42Z"
+        fill="url(#waveGrad2)" opacity="0.9"/>
+
+  <!-- Text -->
+  <text x="190" y="85" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#0c4a6e">
+    Protection
+  </text>
+  <text x="190" y="130" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#06b6d4">
+    Pool Service
+  </text>
+  <text x="190" y="158" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="#0369a1" letter-spacing="3">
+    AUSTIN, TEXAS
+  </text>
+</svg>

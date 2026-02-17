@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White background for ads -->
+  <rect width="1200" height="1200" fill="white"/>
+
+  <!-- Main circle -->
+  <circle cx="600" cy="460" r="340" fill="url(#bg)"/>
+
+  <!-- Shield -->
+  <path d="M600 180 L795 270 L795 470 C795 590 600 685 600 685 C600 685 405 590 405 470 L405 270 Z"
+        fill="none" stroke="white" stroke-width="10" opacity="0.25"/>
+
+  <!-- Water droplet -->
+  <path d="M600 210 C600 210 545 300 545 340 C545 370 570 395 600 395 C630 395 655 370 655 340 C655 300 600 210 600 210Z"
+        fill="url(#wave)" opacity="0.9"/>
+
+  <!-- Waves -->
+  <path d="M435 440 Q480 395 525 440 Q570 485 615 440 Q660 395 705 440 Q735 465 755 480"
+        fill="none" stroke="url(#wave)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M435 495 Q480 450 525 495 Q570 540 615 495 Q660 450 705 495 Q735 520 755 535"
+        fill="none" stroke="url(#wave)" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <path d="M435 550 Q480 505 525 550 Q570 595 615 550 Q660 505 705 550 Q735 575 755 590"
+        fill="none" stroke="url(#wave)" stroke-width="14" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Business name -->
+  <text x="600" y="890" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="80" font-weight="800" fill="#0c4a6e">Protection</text>
+  <text x="600" y="980" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="80" font-weight="800" fill="#06b6d4">Pool Service</text>
+
+  <!-- Tagline -->
+  <text x="600" y="1040" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="500" fill="#0369a1" letter-spacing="5">AUSTIN, TEXAS</text>
+
+  <!-- Phone -->
+  <text x="600" y="1100" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="36" font-weight="600" fill="#0c4a6e">(737) 384-1702</text>
+</svg>

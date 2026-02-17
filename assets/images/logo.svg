@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="60%" style="stop-color:#0369a1"/>
+      <stop offset="100%" style="stop-color:#0c4a6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)"/>
+
+  <!-- Shield shape (protection) -->
+  <path d="M200 60 L310 110 L310 220 C310 290 200 345 200 345 C200 345 90 290 90 220 L90 110 Z"
+        fill="none" stroke="white" stroke-width="6" opacity="0.25"/>
+
+  <!-- Water waves inside shield -->
+  <path d="M120 200 Q145 175 170 200 Q195 225 220 200 Q245 175 270 200 Q280 210 285 215"
+        fill="none" stroke="url(#waveGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 230 Q145 205 170 230 Q195 255 220 230 Q245 205 270 230 Q280 240 285 245"
+        fill="none" stroke="url(#waveGrad)" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M120 260 Q145 235 170 260 Q195 285 220 260 Q245 235 270 260 Q280 270 285 275"
+        fill="none" stroke="url(#waveGrad)" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Pool/droplet icon at top of shield -->
+  <path d="M200 90 C200 90 170 130 170 150 C170 167 183 180 200 180 C217 180 230 167 230 150 C230 130 200 90 200 90Z"
+        fill="url(#waveGrad)" opacity="0.9"/>
+
+  <!-- Text: PPS -->
+  <text x="200" y="178" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="0" fill="white" font-weight="bold" opacity="0">PPS</text>
+</svg>
