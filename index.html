@@ -32,6 +32,12 @@
     <meta name="twitter:description" content="Austin's trusted pool cleaning, equipment repair, and installation experts. 15 years experience. Serving all Austin Metro.">
     <meta name="twitter:image" content="https://protectionpoolservice.com/assets/images/logo-1200x1200.png">
 
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="US-TX">
+    <meta name="geo.placename" content="Austin">
+    <meta name="geo.position" content="30.2672;-97.7431">
+    <meta name="ICBM" content="30.2672, -97.7431">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <link rel="icon" type="image/png" sizes="128x128" href="assets/images/logo-icon-128x128.png">
@@ -180,11 +186,23 @@
             "latitude": 30.2672,
             "longitude": -97.7431
         },
-        "areaServed": {
-            "@type": "City",
-            "name": "Austin",
-            "sameAs": "https://en.wikipedia.org/wiki/Austin,_Texas"
-        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Austin",
+                "sameAs": "https://en.wikipedia.org/wiki/Austin,_Texas"
+            },
+            { "@type": "Place", "name": "Westlake Hills, TX" },
+            { "@type": "Place", "name": "Circle C Ranch, Austin, TX" },
+            { "@type": "Place", "name": "East Austin, TX" },
+            { "@type": "Place", "name": "Tarrytown, Austin, TX" },
+            { "@type": "Place", "name": "Mueller, Austin, TX" },
+            { "@type": "Place", "name": "Barton Creek, Austin, TX" },
+            { "@type": "Place", "name": "Steiner Ranch, Austin, TX" },
+            { "@type": "Place", "name": "Lakeway, TX" },
+            { "@type": "Place", "name": "Cedar Park, TX" },
+            { "@type": "Place", "name": "Round Rock, TX" }
+        ],
         "priceRange": "$$",
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -193,6 +211,68 @@
             "bestRating": "5",
             "worstRating": "1"
         },
+        "review": [
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Michael Rodriguez" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Daniel and his team completely transformed our neglected pool. After years of fighting algae and murky water, they had it crystal clear in just two visits. Now they handle weekly maintenance and I never worry about it."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Sarah Thompson" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Our pool pump died on a Friday afternoon before a big family gathering. Protection Pool Service had someone out within hours and got us a new pump installed the same day. Absolute lifesavers!"
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "James Wilson" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "I manage three rental properties with pools, and Protection Pool Service handles all of them. Their consistency is incredible - every pool looks perfect every week. Great communication too."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Linda Patel" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "The fact that they have electricians on staff is a game-changer. When our pool lights went out, most companies said they'd have to subcontract. Daniel's team handled everything in one visit."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Rachel & Kevin Martinez" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "We bought a house with an older pool and had no idea what we were doing. Daniel walked us through everything, set us up with a maintenance plan, and even taught us the basics. Super patient and knowledgeable."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "David Hernandez" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Had a major leak that two other companies couldn't find. Protection Pool Service found it in under an hour and had it fixed the same day. Their plumber knew exactly what to look for. Highly recommend!"
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Amanda Chen" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Switched from another company after they kept missing appointments. Protection Pool Service shows up every Thursday like clockwork. It's so nice to have a company I can actually rely on."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Brian Johnson" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "They installed our new variable speed pump and the energy savings have been incredible. Daniel's team explained all our options without any pressure. Professional from start to finish."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Carol Mitchell" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Our HOA community pool needed serious work - new filters, replumbing, and electrical upgrades. Protection Pool Service handled the entire project and finished ahead of schedule. The residents are thrilled!"
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Tom Nguyen" },
+                "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                "reviewBody": "Best pool service in Austin, period. Fair prices, honest advice, and they actually answer the phone when you call. After trying three other companies, I finally found one I can trust."
+            }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Pool Services",
@@ -241,6 +321,64 @@
         }
     }
     </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How often should I clean my pool?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most pools in Austin need weekly cleaning and chemical balancing to stay safe and clear. During peak summer months, you may need more frequent skimming and chemical checks due to higher temperatures and usage. A professional weekly maintenance plan ensures consistent water quality year-round."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does pool service cost in Austin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Weekly pool cleaning in Austin typically ranges from $150 to $300 per month depending on pool size and service level. Equipment repairs vary based on the issue. We offer free quotes so you know exactly what to expect — call us at (737) 384-1702 for a personalized estimate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas do you serve?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve the entire Austin metro area including Westlake Hills, Circle C Ranch, East Austin, Tarrytown, Mueller, Barton Creek, Steiner Ranch, Lakeway, Cedar Park, and Round Rock."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you handle pool electrical and plumbing work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Unlike most pool companies, we have licensed electricians and professional plumbers on our in-house team. This means we can handle pool lighting, pump wiring, control systems, leak detection, pipe repair, and new line installation — all in one visit with one point of contact."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I know if my pool pump needs replacing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Common signs include unusual noises, reduced water flow, frequent cycling on and off, visible leaks, or a pump that's over 8-10 years old. If your energy bills have increased, an older single-speed pump may benefit from upgrading to a variable speed model. We offer free diagnostics to help you decide."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What should I do if my pool turns green?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A green pool usually means algae growth due to low chlorine, poor circulation, or filtration problems. Don't swim in it — algae can harbor harmful bacteria. Contact us for a professional algae treatment. We can typically restore a green pool to crystal clear in one to two visits depending on severity."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -282,7 +420,7 @@
         <div class="hero-fallback"></div>
 
         <!-- Video Background (uncomment when video is added) -->
-        <video class="hero-video" autoplay muted loop playsinline>
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
             <source src="assets/video/pool-water.mp4" type="video/mp4">
         </video>
 
@@ -564,6 +702,80 @@
                     <h3 class="text-xl font-bold mb-2">All Austin</h3>
                     <p class="text-white/70">Serving the entire Austin metro area</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-pool-dark mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Got questions about pool care in Austin? We've got answers.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        How often should I clean my pool?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Most pools in Austin need weekly cleaning and chemical balancing to stay safe and clear. During peak summer months, you may need more frequent skimming and chemical checks due to higher temperatures and usage. A professional weekly maintenance plan ensures consistent water quality year-round.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        How much does pool service cost in Austin?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Weekly pool cleaning in Austin typically ranges from $150 to $300 per month depending on pool size and service level. Equipment repairs vary based on the issue. We offer free quotes so you know exactly what to expect — call us at <a href="tel:+17373841702" class="text-pool-blue font-semibold hover:underline">(737) 384-1702</a> for a personalized estimate.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        What areas do you serve?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        We serve the entire Austin metro area including Westlake Hills, Circle C Ranch, East Austin, Tarrytown, Mueller, Barton Creek, Steiner Ranch, Lakeway, Cedar Park, and Round Rock.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        Do you handle pool electrical and plumbing work?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Yes! Unlike most pool companies, we have licensed electricians and professional plumbers on our in-house team. This means we can handle pool lighting, pump wiring, control systems, leak detection, pipe repair, and new line installation — all in one visit with one point of contact.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        How do I know if my pool pump needs replacing?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Common signs include unusual noises, reduced water flow, frequent cycling on and off, visible leaks, or a pump that's over 8-10 years old. If your energy bills have increased, an older single-speed pump may benefit from upgrading to a variable speed model. We offer free diagnostics to help you decide.
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-2xl shadow-sm border border-gray-100 group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-semibold text-pool-dark text-lg">
+                        What should I do if my pool turns green?
+                        <svg class="w-5 h-5 text-pool-blue transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600">
+                        A green pool usually means algae growth due to low chlorine, poor circulation, or filtration problems. Don't swim in it — algae can harbor harmful bacteria. Contact us for a professional algae treatment. We can typically restore a green pool to crystal clear in one to two visits depending on severity.
+                    </div>
+                </details>
             </div>
         </div>
     </section>

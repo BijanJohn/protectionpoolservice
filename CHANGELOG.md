@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0] - 2026-02-28
+
+### Added
+- Individual Review schema (10 reviews) inside LocalBusiness JSON-LD for star rating rich results
+- FAQPage structured data with 6 common pool service questions/answers
+- Visible FAQ section with accordion-style Q&A between "Why Choose Us" and "Testimonials"
+- Geo meta tags (geo.region, geo.placename, geo.position, ICBM) for local search signals
+- Expanded `areaServed` in LocalBusiness schema to include 11 Austin-area neighborhoods and suburbs
+
+### Changed
+- Video tag now uses `preload="metadata"` to reduce initial page load and improve Core Web Vitals
+- Updated sitemap.xml `lastmod` date to 2026-02-28
+
 ## [1.2.0] - 2026-02-17
 
 ### Added
